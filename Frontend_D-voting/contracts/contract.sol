@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT  
 pragma solidity ^0.8.26;
 
-// import "@openzeppelin/contracts/security/Pausable.sol";
-// import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 //https://www.oklink.com/amoy/tx/0x7a6063dbc33476a3aad44cda00a16155afcdcfb609840af7ba7fa542d0d3608b
 
@@ -185,7 +185,7 @@ contract VotingEVM is Pausable, ReentrancyGuard {
     endTime = 0;
     stopVoting = false;
     winner = address(0);
-}
+    }
 
 
     function electionCommissionBalance() external view returns (uint256) {
