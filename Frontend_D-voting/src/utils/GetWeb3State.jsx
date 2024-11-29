@@ -28,8 +28,8 @@ const GetWeb3State = async () => {
 
     const provider = new ethers.BrowserProvider(window.ethereum);
     const signer = await provider.getSigner();
-
-    const contractAddress = "0xf5c8c50De6456f64F475290C9c16Eaa2AbDe11fC"; 
+    // Contract Address
+    const contractAddress = "0x0d5fae9a98a9fff1955161fc2871d73651a6bb2c"; 
 
     const message =
       "Welcome to Voting Dapp. You accept our terms and conditions";
@@ -37,7 +37,7 @@ const GetWeb3State = async () => {
     const dataSignature = { signature };
 
     const res = await axios.post(
-      `https://d-voting-backend.vercel.app/api/v1/auth/authentication?accountAddress=${selectedAccount}`,
+      `https://d-voting-backend-d-voting.vercel.app/api/v1/auth/authentication?accountAddress=${selectedAccount}`,
       dataSignature
     );
    

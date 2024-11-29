@@ -4,7 +4,7 @@ import cors from "cors";
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://d-voting-swappy.vercel.app"],
+  origin: ["http://localhost:5173", "https://d-voting-majju.vercel.app"],
   methods: ["POST", "GET", "DELETE", "OPTIONS"],
   credentials: true,
 };

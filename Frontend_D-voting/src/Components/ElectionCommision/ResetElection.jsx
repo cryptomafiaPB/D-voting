@@ -44,7 +44,7 @@ function ResetElection() {
   const deleteAllDataOfVoters = async () => {
     try {
       const response = await fetch(
-        `https://d-voting-backend.vercel.app/api/v1/voter/delete-All-Voters`,
+        `https://d-voting-backend-d-voting.vercel.app/api/v1/voter/delete-All-Voters`,
         {
           method: "DELETE",
           headers: {
@@ -69,7 +69,7 @@ function ResetElection() {
   const deleteAllDataOfCandidates = async () => {
     try {
       const response = await fetch(
-        `https://d-voting-backend.vercel.app/api/v1/candidate/delete-All-Candidates`,
+        `https://d-voting-backend-d-voting.vercel.app/api/v1/candidate/delete-All-Candidates`,
         {
           method: "DELETE",
           headers: {

@@ -11,7 +11,7 @@ const NEXT_PUBLIC_PRIVATE_KEY =
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.27",
-  defaultNetwork: "matic",
+  // defaultNetwork: "matic",
   networks: {
     hardhat: {},
     polygon_amoy: {

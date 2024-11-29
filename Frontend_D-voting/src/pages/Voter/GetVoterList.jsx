@@ -58,7 +58,7 @@ function GetVoter() {
     const fetchImages = async () => {
       try {
         const response = await fetch(
-          `https://d-voting-backend.vercel.app/api/v1/voter/get-voter-list`,
+          `https://d-voting-backend-d-voting.vercel.app/api/v1/voter/get-voter-list`,
           {
             headers: {
               "Content-Type": "application/json",
