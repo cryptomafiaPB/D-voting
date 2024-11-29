@@ -57,10 +57,11 @@ function Login() {
       );
 
       const data = await response.json();
-
-      if (address.toLowerCase() !== selectedAccount) {
-        toast.error("Permission denied!!");
-        return;
+      if (address) {
+        if (address.toLowerCase() !== selectedAccount) {
+          toast.error("Permission denied!!");
+          return;
+        }
       }
 
       if (response.ok) {
