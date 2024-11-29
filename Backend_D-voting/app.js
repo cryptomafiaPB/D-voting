@@ -23,5 +23,8 @@ app.use("/api/v1/auth", Authentication);
 app.use("/api/v1/candidate", auth, candidate);
 app.use("/api/v1/voter", auth, voter);
 app.use("/api/v1/election-commission", auth, electionCommission);
+app.get("/test", (req, res) => {
+  res.send("Hello World!");
+});
 
 export { app };
